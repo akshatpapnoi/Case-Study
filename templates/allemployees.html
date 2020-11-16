@@ -52,7 +52,16 @@
                 <td>+91-84525654197</td>
                 <td>14 Nov, 1998</td>
                 <td>1st Block 1st Cross, Pune, Maharashtra</td>
-                <td class="tooltip edit-details-table" onclick="editbuttonclick(event)"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
+                <td><a href="./updateemployee.html" class="tooltip edit-details-table" onclick="editbuttonclick(event)"><span class="tooltiptext">Edit Details</span></a></td>
+            </tr>
+            <tr>
+                <td>1575688</td>
+                <td>John Doe</td>
+                <td>john.doe@company.com</td>
+                <td>+91-84525654197</td>
+                <td>14 Nov, 1998</td>
+                <td>1st Block 1st Cross, Pune, Maharashtra</td>
+                <td><a href="./updateemployee.html" class="tooltip edit-details-table" onclick="editbuttonclick(event)"><span class="tooltiptext">Edit Details</span></a></td>
             </tr>
             <tr>
                 <td>1575634</td>
@@ -61,16 +70,7 @@
                 <td>+91-84525654197</td>
                 <td>14 Nov, 1998</td>
                 <td>1st Block 1st Cross, Pune, Maharashtra</td>
-                <td class="tooltip edit-details-table" onclick="editbuttonclick(event)"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
-            </tr>
-            <tr>
-                <td>1575634</td>
-                <td>John Doe</td>
-                <td>john.doe@company.com</td>
-                <td>+91-84525654197</td>
-                <td>14 Nov, 1998</td>
-                <td>1st Block 1st Cross, Pune, Maharashtra</td>
-                <td class="tooltip edit-details-table" onclick="editbuttonclick(event)"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
+                <td><a href="./updateemployee.html" class="tooltip edit-details-table" onclick="editbuttonclick(event)"><span class="tooltiptext">Edit Details</span></a></td>
             </tr>
           </table>
     </div>
@@ -82,9 +82,20 @@
 
 <script>
     function editbuttonclick(e){
-        var empid = e.toElement.parentElement.children[0].innerHTML;
-        console.log(empid);
-        //Send employee id to backend.
+        e.preventDefault();
+        var empid = e.toElement.parentElement.parentElement.children[0].innerHTML;
+        if(isNaN(empid)){
+            empid = e.toElement.parentElement.parentElement.parentElement.children[0].innerHTML;
+            var url = e.toElement.parentElement.href + "?empid=" + empid;
+            e.toElement.parentElement.href = url
+            location.href = e.toElement.parentElement.href;
+        }
+
+        else{
+            var url = e.toElement.href + "?empid=" + empid;
+            e.toElement.href = url
+            location.href = e.toElement.href;
+        }
     }
 </script>
 
