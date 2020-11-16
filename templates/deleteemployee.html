@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee</title>
+
+    <link rel="stylesheet" href="../static/styles.css">
+
+</head>
+
+<body>
+    <nav>
+        <h2 style="display: inline;" >CASE STUDY</h2>
+        <a class="nav-link" href="./deleteemployee.html">Delete Employee</a>
+        <a class="nav-link" href="./searchemployee.html">Search Employee</a>
+        <a class="nav-link" href="./updateemployee.html">Update Employee</a>
+        <a class="nav-link" href="./addemployee.html">Add Employee</a>
+    </nav>
+
+    <div class="main" style="margin-top: 10%;">
+        <h2> Delete Employee </h2>
+        <form action="backend.php">
+            <label for="empUpd"> Enter Employee id of employee </label>
+            <div>
+                <input type="text" name="empUpd" id="empUpd">
+            </div>
+            <br>
+            <div>
+                <input type="button" value="Delete Employee">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        Case study by Team 4
+    </footer>
+</body>
+
+</html>

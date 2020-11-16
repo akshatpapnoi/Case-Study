@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee</title>
+
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <nav>
+        <h2 style="display: inline;" >CASE STUDY</h2>
+        <a class="nav-link" href="./deleteemployee.html">Delete Employee</a>
+        <a class="nav-link" href="./searchemployee.html">Search Employee</a>
+        <a class="nav-link" href="./updateemployee.html">Update Employee</a>
+        <a class="nav-link" href="./addemployee.html">Add Employee</a>
+    </nav>
+
+    <div class="main">
+    <h2>Enter the following details</h2>
+    <form action="backend.php">
+        <label for="empId"> Employee Id</label>
+        <div>
+            <input type="text" name="empId" id="empId">
+        </div>
+        <br>
+        <label for="empName">Employee Name</label>
+        <div>
+            <input type="text" name="empName" id="empName">
+        </div>
+        <br>
+        <label for="empMail">Employee E-mail</label>
+        <div>
+            <input type="email" name="empEmail" id="empEmail">
+        </div>
+        <br>
+        <label for="empDob">Employee Date of Birth</label>
+        <div>
+            <input type="date" name="empDob" id="empDob">
+        </div>
+        <br>
+        <label for="empNum"> Employee Mobile Number</label>
+        <div>
+            <input type="tel" name="empNum" id="empNum">
+        </div>
+        <br>
+        <label for="empAdd">Employee Address</label>
+        <div>
+            <textarea name="empAdd" cols="40" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset"> &nbsp;
+            <input type="submit" value="Add Employee">
+        </div>
+    </form>
+    </div>
+
+    <footer>
+        Case study by Team 4
+    </footer>
+</body>
+
+</html>
