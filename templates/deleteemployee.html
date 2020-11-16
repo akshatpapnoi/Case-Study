@@ -28,7 +28,7 @@
             </div>
             <br>
             <div>
-                <input type="button" value="Delete Employee">
+                <input type="button" value="Delete Employee" onclick="deleteformsubmit()">
             </div>
         </form>
     </div>
@@ -37,5 +37,21 @@
         Case study by Team 4
     </footer>
 </body>
+
+<script>
+
+    function deleteformsubmit(){
+        var empid = document.getElementById("empUpd").value;
+        if(isNaN(empid) || empid=="")
+            alert("Please enter valid Employee Id");
+        else{
+            if (confirm("Are you sure you want to delete Employee: "+ empid )) {
+                //Send employee id to backend.
+            } 
+        }
+    }
+
+</script>
+
 
 </html>
