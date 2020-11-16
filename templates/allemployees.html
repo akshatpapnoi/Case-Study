@@ -52,7 +52,7 @@
                 <td>+91-84525654197</td>
                 <td>14 Nov, 1998</td>
                 <td>1st Block 1st Cross, Pune, Maharashtra</td>
-                <td class="tooltip edit-details-table"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
+                <td class="tooltip edit-details-table" onclick="editbuttonclick(event)"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
             </tr>
             <tr>
                 <td>1575634</td>
@@ -61,7 +61,7 @@
                 <td>+91-84525654197</td>
                 <td>14 Nov, 1998</td>
                 <td>1st Block 1st Cross, Pune, Maharashtra</td>
-                <td class="tooltip edit-details-table"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
+                <td class="tooltip edit-details-table" onclick="editbuttonclick(event)"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
             </tr>
             <tr>
                 <td>1575634</td>
@@ -70,7 +70,7 @@
                 <td>+91-84525654197</td>
                 <td>14 Nov, 1998</td>
                 <td>1st Block 1st Cross, Pune, Maharashtra</td>
-                <td class="tooltip edit-details-table"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
+                <td class="tooltip edit-details-table" onclick="editbuttonclick(event)"><a href="./updateemployee.html"><span class="tooltiptext">Edit Details</span></a></td>
             </tr>
           </table>
     </div>
@@ -79,5 +79,14 @@
         Case study by Team 4
     </footer>
 </body>
+
+<script>
+    function editbuttonclick(e){
+        var empid = e.toElement.parentElement.children[0].innerHTML;
+        console.log(empid);
+        //Send employee id to backend.
+    }
+</script>
+
 
 </html>
