@@ -14,21 +14,43 @@
     <nav>
         <h2 style="display: inline;" >CASE STUDY</h2>
         <a class="nav-link" href="./deleteemployee.html">Delete Employee</a>
-        <a class="nav-link" href="./searchemployee.html">Search Employee</a>
-        <a class="nav-link" href="./updateemployee.html">Update Employee</a>
         <a class="nav-link" href="./addemployee.html">Add Employee</a>
+        <a class="nav-link" href="./allemployees.html">All Employees</a>
     </nav>
 
-    <div class="main" style="margin-top: 8%;">
-    <h2>Details of Employee 1575634</h2>
-    <P>Full Name: <b>John Doe</b></P>
-    <P>Email: <b>john.doe@company.com</b></P>
-    <P>Mobile Number: <b>+91-84525654197</b></P>
-    <P>Date of Birth: <b>14 Nov, 1998</b></P>
-    <P>Address: <b>1st Block 1st Cross, Pune, Maharashtra</b></P>
-    <div>
-        <input type="button" value="Update Details">
-    </div>
+    <div class="main" style="margin-top: 38px;">
+    <h2>Update Details of Employee 1575634</h2>
+    <form action="backend.php">
+        <label for="empName">Full Name</label>
+        <div>
+            <input type="text" name="empName" id="empName" value="John Doe">
+        </div>
+        <br>
+        <label for="empMail">E-mail Id</label>
+        <div>
+            <input type="email" name="empEmail" id="empEmail" value="john.doe@company.com">
+        </div>
+        <br>
+        <label for="empDob">Date of Birth</label>
+        <div>
+            <input type="date" name="empDob" id="empDob" value="1998-11-14" disabled>
+        </div>
+        <br>
+        <label for="empNum">Mobile Number</label>
+        <div>
+            <input type="tel" name="empNum" id="empNum" value="+91-84525654197">
+        </div>
+        <br>
+        <label for="empAdd"> Address</label>
+        <div>
+            <textarea name="empAdd" cols="40" rows="4">1st Block 1st Cross, Pune, Maharashtra</textarea>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset"> &nbsp;
+            <input type="submit" value="Update Details">
+        </div>
+    </form>
     </div>
 
     <footer>

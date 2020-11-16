@@ -14,12 +14,11 @@
     <nav>
         <h2 style="display: inline;" >CASE STUDY</h2>
         <a class="nav-link" href="./deleteemployee.html">Delete Employee</a>
-        <a class="nav-link" href="./searchemployee.html">Search Employee</a>
-        <a class="nav-link" href="./updateemployee.html">Update Employee</a>
         <a class="nav-link" href="./addemployee.html">Add Employee</a>
+        <a class="nav-link" href="./allemployees.html">All Employees</a>
     </nav>
 
-    <div class="main">
+    <div class="main" style="height: 75vh;">
     <h2>Enter the following details</h2>
     <form action="backend.php">
         <label for="empId"> Employee Id</label>
@@ -27,29 +26,29 @@
             <input type="text" name="empId" id="empId">
         </div>
         <br>
-        <label for="empName">Employee Name</label>
+        <label for="empName">Full Name</label>
         <div>
             <input type="text" name="empName" id="empName">
         </div>
         <br>
-        <label for="empMail">Employee E-mail</label>
+        <label for="empMail">E-mail Id</label>
         <div>
             <input type="email" name="empEmail" id="empEmail">
         </div>
         <br>
-        <label for="empDob">Employee Date of Birth</label>
+        <label for="empDob">Date of Birth</label>
         <div>
             <input type="date" name="empDob" id="empDob">
         </div>
         <br>
-        <label for="empNum"> Employee Mobile Number</label>
+        <label for="empNum">Mobile Number</label>
         <div>
             <input type="tel" name="empNum" id="empNum">
         </div>
         <br>
-        <label for="empAdd">Employee Address</label>
+        <label for="empAdd">Address</label>
         <div>
-            <textarea name="empAdd" cols="40" rows="5"></textarea>
+            <textarea name="empAdd" cols="40" rows="4"></textarea>
         </div>
         <br>
         <div>

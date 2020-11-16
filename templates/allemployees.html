@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee</title>
+
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <nav>
+        <h2 style="display: inline;" >CASE STUDY</h2>
+        <a class="nav-link" href="./deleteemployee.html">Delete Employee</a>
+        <a class="nav-link" href="./addemployee.html">Add Employee</a>
+        <a class="nav-link" href="./allemployees.html">All Employees</a>
+    </nav>
+
+    <div class="main" style="width:auto; height: 80vh;" >
+
+        <form action="backend.php" style="text-align: center;">
+            <label for="empSea">Choose a field to search</label>
+            <select name="empSea" id="empSea">
+                <option value="empId">Employee ID</option>
+                <option value="empNam">Employee Name</option>
+                <option value="empAge">Employee Age</option>
+            </select>
+            &nbsp; &nbsp;
+            <label for="searchtext">Enter keyword to search </label>
+            <input type="text" name="searchtext" id="searchtext">
+            &nbsp; &nbsp;
+            <input type="button" value="Search Employee">
+        </form>
+
+        <br><br>
+        <table>
+            <tr>
+              <th>Employee Id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Mobile No.</th>
+              <th>Date of Birth</th>
+              <th>Address</th>
+              <th></th>
+            </tr>
+            <tr>
+                <td>1575634</td>
+                <td>John Doe</td>
+                <td>john.doe@company.com</td>
+                <td>+91-84525654197</td>
+                <td>14 Nov, 1998</td>
+                <td>1st Block 1st Cross, Pune, Maharashtra</td>
+                <td class="tooltip edit-details-table"><span class="tooltiptext">Edit Details</span></td>
+            </tr>
+            <tr>
+                <td>1575634</td>
+                <td>John Doe</td>
+                <td>john.doe@company.com</td>
+                <td>+91-84525654197</td>
+                <td>14 Nov, 1998</td>
+                <td>1st Block 1st Cross, Pune, Maharashtra</td>
+                <td class="tooltip edit-details-table"><span class="tooltiptext">Edit Details</span></td>
+            </tr>
+            <tr>
+                <td>1575634</td>
+                <td>John Doe</td>
+                <td>john.doe@company.com</td>
+                <td>+91-84525654197</td>
+                <td>14 Nov, 1998</td>
+                <td>1st Block 1st Cross, Pune, Maharashtra</td>
+                <td class="tooltip edit-details-table"><span class="tooltiptext">Edit Details</span></td>
+            </tr>
+          </table>
+    </div>
+
+    <footer>
+        Case study by Team 4
+    </footer>
+</body>
+
+</html>
